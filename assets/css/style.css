@@ -8,6 +8,10 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -202,6 +206,10 @@ nav {
 
 .section {
     padding: 80px 0;
+}
+
+.section--gray {
+    background-color: #f8f8f8;
 }
 
 .section__header {
@@ -407,27 +415,146 @@ nav {
 .accordion__item {
     position: relative;
     border: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+.accordion__item.active
+.accordion__content {
+    display: block;
 }
 
 .accordion__header {
+    position: relative;
     border-bottom: 1px solid #e5e5e5;
+    padding: 15px 20px 15px 55px;
+    cursor: pointer;
+}
+
+.accordion__item.active
+.accordion__header::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    rotate: -45deg;
+}
+
+.accordion__item
+.accordion__header::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    rotate: 135deg;
 }
 
 .accordion__icon {
     position: absolute;
+    top: 11px;
+    left: 11px;
+    margin: 0;
 }
 
 .accordion__title {
     font-size: 14px;
     text-transform: uppercase;
     color: #333;
-    padding-left: 50px;
+    font-weight: bold;
+    padding: 0;
 }
 
 .accordion__content {
+    display: none;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 100;
     color: #999999;
     font-style: italic;
+    padding: 0 15px;
 }
+
+/* Joe Doe text */
+
+.jondoe {
+
+}
+
+.jondoe__btns {
+    position: relative;
+    top: 55px;
+}
+
+.jondoe__btns__prev {
+    position: absolute;
+    left: 0;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+}
+
+.jondoe__btns__next {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+}
+
+.jondoe__item {
+    padding: 0 110px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.jondoe__img {
+    position: absolute;
+}
+
+.jondoe__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #999999;
+    font-style: italic;
+    padding-left: 200px;
+}
+
+.jondoe__textname {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    font-weight: 100;
+    color: #333;
+    font-style: italic;
+    padding-left: 200px;
+}
+
+.jondoe__textname::before {
+    content: "";
+    display: inline-block;
+    background-color: #f38181;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+}
+
+
