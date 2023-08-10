@@ -407,7 +407,10 @@ nav {
 }
 
 .wedo__item {
+    display: block;
     flex: 1 1 0;
+    width: 100%;
+    height: auto;
 }
 
 .accordion {
