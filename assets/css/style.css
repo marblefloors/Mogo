@@ -413,6 +413,12 @@ nav {
     height: auto;
 }
 
+.wedo__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .accordion {
 
 }
