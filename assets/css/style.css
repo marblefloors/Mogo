@@ -404,6 +404,7 @@ nav {
 
 .wedo {
     display: flex;
+    justify-content: center;
 }
 
 .wedo__item {
