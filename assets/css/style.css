@@ -249,43 +249,45 @@ nav {
     width: 100%;
 }
 
-/* About images */
+/* Card */
 
-.about {
+.card {
     display: flex;
     justify-content: space-around;
     margin: 80px auto 0;
-
 }
 
-.about__item {
-    position: relative;
-    display: block;
+.card__item {
     width: 380px;
+}
+
+.card__item:hover .card__img img {
+    opacity: .1;
+}
+
+.card__item:hover .card__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card__inner {
+    display: block;
     margin: 0 auto;
+    position: relative;
     background-color: #95e1d3;
     cursor: pointer;
 }
 
-.about__item:hover .about__img img {
-    opacity: .1;
-}
-
-.about__item:hover .about__img {
-    transform: translate3d(-10px, -10px, 0);
-}
-
-.about__img img {
+.card__img img {
     display: block;
     transition: opacity .2s linear;
 }
 
-.about__img {
+.card__img {
     background: linear-gradient(to bottom, #f38181, #fce38a);
     transition: transform .2s linear;
 }
 
-.about__text {
+.card__text {
     position: absolute;
     width: 100%;
     font-size: 18px;
@@ -301,7 +303,7 @@ nav {
     text-transform: uppercase;
 }
 
-.about__item:hover .about__text {
+.card__item:hover .card__text {
     opacity: 1;
 }
 
@@ -487,35 +489,32 @@ nav {
 /* Joe Doe text */
 
 .jondoe {
-
-}
-
-.jondoe__btns {
     position: relative;
-    top: 55px;
 }
 
-.jondoe__btns__prev {
+.jondoe__btn {
     position: absolute;
-    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.jondoe__btn::after {
     content: "";
-    display: block;
     width: 15px;
     height: 15px;
-    border-top: 2px solid #333;
-    border-left: 2px solid #333;
+    display: block;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
 }
 
-.jondoe__btns__next {
-    position: absolute;
+.jondoe__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.jondoe__btn--next {
     right: 0;
-    left: 0;
-    content: "";
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid #333;
-    border-right: 2px solid #333;
+    transform: rotate(135deg);
 }
 
 .jondoe__item {
@@ -556,5 +555,92 @@ nav {
     height: 3px;
     margin-right: 10px;
 }
+
+/* Team */
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item {
+    color: #f38181;
+    background-color: #fce38a;
+    border: 1px solid #f38181;
+    font-size: 30px;
+    line-height: 1;
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+    transition: background .1s linear, color .1s linear;
+}
+
+.social__item:last-child {
+    border-right: 0;
+}
+
+.social__item:hover {
+    background-color: #f38181;
+    color: #fff;
+}
+
+.card__info {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.card__name {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+.card_prof {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    font-style: italic;
+    color: #999999;
+}
+
+/* Sponsors */
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Works */
+
+.works {
+    display: flex;
+    justify-content: center;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+
+}
+
+.works__info {
+
+}
+
+.works__title {
+
+}
+
+.works__text {
+    
+}
+
+
 
 
