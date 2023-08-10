@@ -402,20 +402,6 @@ nav {
 
 /* wedo */
 
-.wedo {
-    display: flex;
-    justify-content: center;
-}
-
-.wedo__item {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.wedo__img {
-    display: block;
-}
 
 .accordion {
 
