@@ -376,7 +376,7 @@ nav {
 /* Devices */
 
 .section--devices {
-    background: url("assets/img/images/design/design-background.jpg") center no-repeat;
+    background: url("/assets/img/images/design/design-background.jpg") center no-repeat;
     background-size: cover;
     padding-bottom: 0;
 }
