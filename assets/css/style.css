@@ -378,6 +378,7 @@ nav {
 .section--devices {
     background: url("/assets/img/images/design/design-background.jpg") center no-repeat;
     background-size: cover;
+    max-width: 100%;
     padding-bottom: 0;
 }
 
