@@ -102,8 +102,9 @@ hr {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header {
@@ -280,12 +281,14 @@ nav {
 
 .card {
     display: flex;
-    justify-content: space-around;
-    margin: 80px auto 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px -15px 0;
 }
 
 .card__item {
-    width: 380px;
+    width: 33.33333%;
+    padding: 0 15px;
 }
 
 .card__item:hover .card__img img {
@@ -306,6 +309,8 @@ nav {
 
 .card__img img {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .2s linear;
 }
 
@@ -360,6 +365,7 @@ nav {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat__item {
@@ -1057,4 +1063,141 @@ nav {
     text-align: center;
     padding: 25px 0;
     color: #545454;
+}
+
+/* ADAPTATION */
+
+@media (max-width: 1230px) {
+
+    .intro__title {
+        font-size: 80px;
+    }
+
+    .intro__subtitle {
+        font-size: 55px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    
+    /* Intro */
+    .intro__title {
+        font-size: 60px;
+    }
+
+    .intro__subtitle {
+        font-size: 42px;
+    }
+
+    /* Stat */
+    .stat {
+        justify-content: center;
+    }
+
+    .stat__item {
+        flex: none;
+        width: 33.33333%;
+        border: 0;
+    }
+
+    .stat__item:last-child {
+        border-right: 0;
+    }
+    
+}
+
+@media (max-width: 770px) {
+
+    /* Nav */
+    nav {
+        display: none;
+    }
+    
+    /* Intro */
+    .intro__title {
+        font-size: 46px;
+    }
+
+    .intro__subtitle {
+        font-size: 32px;
+    }
+
+    /* Slider */
+    .slider__item__text {
+        display: none;
+    }
+
+    .slider__item.active::before {
+        width: 40%;
+    }
+
+    /* Section */
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title::after {
+        width: 50px;
+    }
+
+    .card {
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    .card__item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 20px;
+    }
+
+    .card__item:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Stat */
+    .stat__item {
+        padding: 10px 10px;
+    }
+
+    .stat_count {
+        font-size: 58px;
+    }
+    
+    .stat__text {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 570px) {
+
+    /* Intro */
+    .intro__title {
+        font-size: 38px;
+    }
+
+    .intro__subtitle {
+        font-size: 28px;
+    }
+
+    /* Stat */
+
+    .stat_count {
+        font-size: 46px;
+    }
+    
+    .stat__text {
+        font-size: 8px;
+    }
+
 }
