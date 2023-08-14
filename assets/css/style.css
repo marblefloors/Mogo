@@ -464,10 +464,20 @@ nav {
 .wedo {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .wedo__item {
     flex: 1 1 0;
+    padding: 0 15px;
 }
 
 .accordion {}
@@ -1118,6 +1128,17 @@ nav {
         border-right: 0;
     }
 
+    /* Wedo */
+    
+    .wedo__item {
+        flex: none;
+        width: 100%;
+    }
+    
+    .wedo__img {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -1205,6 +1226,17 @@ nav {
         margin-bottom: 40px;
     }
 
+    /* Wedo */
+    
+    .wedo__item {
+        flex: none;
+        width: 100%;
+    }
+    
+    .wedo__img {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 570px) {
