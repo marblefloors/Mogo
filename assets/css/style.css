@@ -1299,9 +1299,8 @@ nav {
     }
     
     .works__col {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex: none;
+        width: 50%;
     }
     
     .works__item {
