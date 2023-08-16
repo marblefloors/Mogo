@@ -554,7 +554,9 @@ nav {
 /* Joe Doe text */
 
 .jondoe {
+    display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .jondoe__btn {
@@ -583,11 +585,14 @@ nav {
 }
 
 .jondoe__item {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 110px;
     position: relative;
 }
 
 .jondoe__img {
+    display: block;
     position: absolute;
     top: 50%;
     left: 9%;
@@ -660,6 +665,7 @@ nav {
 
 .sponsors {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -668,6 +674,7 @@ nav {
 
 .works {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -1236,6 +1243,105 @@ nav {
     .wedo__img {
         width: 100%;
     }
+
+    /* jondoe */
+
+    .jondoe__item {
+        width: 100%;
+        height: auto;
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .jondoe__img {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: translate3d(0, 0, 0);
+        margin-bottom: 20px;
+    }
+
+    .jondoe__text {
+        max-width: 100%;
+        height: auto;
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    .jondoe__textname {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    /* Sponsors */
+    .sponsors {
+        justify-content: center;
+    }
+
+    .sponsors__item {
+        width: 33.33333%;
+        text-align: center;
+
+    }
+
+    .sponsors__item--part1 {
+        margin-bottom: 20px;
+    }
+
+    /* Works */
+
+    .works {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .works__col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .works__item {
+        display: block;
+    }
+    
+    .works__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .works__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        transition: opacity .2s linear;
+        user-select: none;
+    }
+  
+    .works__title {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .works__text {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    .works__col--part1 {
+        width: 50%;
+    }
     
 }
 
@@ -1293,4 +1399,57 @@ nav {
         right: -50px;
         z-index: 1;
     }
+    
+    /* jondoe */
+
+    .jondoe__item {
+        width: 100%;
+        height: auto;
+        padding: 0 50px;
+        position: relative;
+    }
+    
+    .jondoe__img {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: translate3d(0, 0, 0);
+        margin-bottom: 20px;
+    }
+
+    .jondoe__text {
+        max-width: 100%;
+        height: auto;
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    .jondoe__textname {
+        font-size: 20px;
+        padding-left: 0;
+    }
+    
+    /* Sponsors */
+    .sponsors {
+        justify-content: center;
+    }
+
+    .sponsors__item {
+        width: 50%;
+        text-align: center;
+    }
+
+    .sponsors__item--part3 {
+        padding-left: 20px;
+    }
+    
+    .sponsors__item--part4 {
+        padding-right: 20px;
+    }
+
+    /* Works */
+    
 }
