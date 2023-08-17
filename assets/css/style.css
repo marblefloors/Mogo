@@ -1542,8 +1542,17 @@ nav {
     }
 
     /* Stories */
+    .stories {
+        flex-wrap: wrap;
+    }
+
     .stories__item {
         width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .stories__item:last-child {
+        margin-bottom: 0;
     }
     
 }
