@@ -1083,6 +1083,7 @@ nav {
 .inst__photo {
     display: block;
     border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
     width: 33.33333%;
 }
 
@@ -1671,6 +1672,7 @@ nav {
     .inst__photo {
         display: block;
         border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
         width: 33.33333%;
     }
 
@@ -1938,7 +1940,12 @@ nav {
     .inst__photo {
         display: block;
         border-top: 1px solid #fff;
-        width: 33.33333%;
+        border-right: 1px solid #fff;
+        width: 50%;
+    }
+
+    .inst__photo:last-child {
+        width: 100%;
     }
 
     .instagram__text {
