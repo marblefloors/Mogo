@@ -1645,7 +1645,7 @@ nav {
     }
 
     .footer__stories {
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .stories__item__text {
@@ -1659,13 +1659,10 @@ nav {
     /* INSTAGRAM */
     .footer__item--third {
         width: 100%;
-        margin: 0 30px;
+        margin: 0 20px;
     }
 
     .instagram__photos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         margin-bottom: 10px;
         width: 100%;
         height: auto;
@@ -1826,6 +1823,118 @@ nav {
 
     .stories__item:last-child {
         margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer__social {
+        width: 100%;
+        border-top: 1px solid #999;
+        padding-top: 20px;
+        margin: 0;
+    }
+    
+    .footer__social a {
+        margin-right: 5px;
+        margin-bottom: 20px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .footer__social .fab {
+        font-size: 28px;
+    }
+
+    .footer__social__text {
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .subscribe {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .subscribe__mail {
+        font-size: 13px;
+        width: 65%;
+    }
+
+    .subscribe__mail::placeholder {
+        color: #ccc;
+    }
+
+    .subscribe__mail:focus {
+        outline: none;
+        border-color: #95e1d3;
+    }
+
+    .subscribe__button {
+        font-size: 12px;
+        padding: 0;
+        width: 35%;
+    }
+
+    .subscribe__button:hover {
+        background-color: #7fc1b5;
+    }
+
+    /* BLOGS */
+    .footer__item--second {
+        width: 100%;
+    }
+
+    .footer__name {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 50px;
+    }
+
+    .footer__name--third {
+        margin-top: 0;
+    }
+
+    .footer__stories {
+        margin: 0 20px;
+    }
+
+    .stories__item__text {
+        font-size: 12px;
+    }
+
+    .stories__item__date {
+        font-size: 12px;
+    }
+
+    /* INSTAGRAM */
+    .footer__item--third {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .instagram__photos {
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .inst__photo {
+        display: block;
+        border-top: 1px solid #fff;
+        width: 33.33333%;
+    }
+
+    .instagram__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: lighter;
+        font-style: italic;
+        color: #999;
+        transition: color .1s linear;
+    }
+
+    .instagram__text:hover {
+        color: #333;
     }
 
 }
