@@ -1106,7 +1106,7 @@ nav {
 
 .footer__under {
     margin-top: 50px;
-    background-color: #e5e5e5;
+    /* background-color: #e5e5e5; */
 }
 
 .footer__under__line {
@@ -1140,7 +1140,7 @@ nav {
 
     /* Intro */
     .intro__inner {
-        margin-top: 300px;
+        margin-top: 250px;
         height: 450px;
     }
 
@@ -1153,7 +1153,7 @@ nav {
     }
 
     .slider {
-        margin-top: 120px;
+        margin-top: 0;
     }
 
     .slider__item__num {
@@ -1992,13 +1992,9 @@ nav {
         display: block;
         border-top: 1px solid #fff;
         border-right: 1px solid #fff;
-        width: 50%;
+        width: 33.33333%;
     }
-
-    .inst__photo:last-child {
-        width: 100%;
-    }
-
+    
     .instagram__text {
         font-family: 'Roboto', sans-serif;
         font-size: 13px;
