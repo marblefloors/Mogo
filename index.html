@@ -12,31 +12,29 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header active" id="header">
         <div class="container">
             <div class="header__inner">
                 <a href="#" style="text-decoration: none;">
                     <div class="header__logo">MoGo</div>
                 </a>
-                <nav>
-                    <a class="nav__link active" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Contact</a>
+                <nav id="nav">
+                    <a class="nav__link" href="#" data-scroll="#about">About</a>
+                    <a class="nav__link" href="#" data-scroll="#service">Service</a>
+                    <a class="nav__link" href="#" data-scroll="#team">Team</a>
+                    <a class="nav__link" href="#" data-scroll="#work">Work</a>
+                    <a class="nav__link" href="#" data-scroll="#stories">Blog</a>
                     <a href="#" class="nav__link"><i class="fa-solid fa-cart-shopping"></i></a>
                     <a href="#" class="nav__link"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </nav>
-                <div class="header__menu">
-                    <span class="menu__item">
-
-                    </span>
-                </div>
+                <button class="header__menu" type="button" id="menu">
+                    <span class="menu__item"></span>
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container container--intro">
             <div class="intro__inner">
                 <h2 class="intro__subtitle">Creative Template</h2>
@@ -64,7 +62,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!-- About -->
+    <section class="section" id="about">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__subtitle">What we do</h3>
@@ -110,6 +109,7 @@
         </div>
     </section>
 
+    <!-- Statistics -->
     <div class="statistics">
         <div class="container">
             <div class="stat">
@@ -157,7 +157,8 @@
         </div>
     </div>
 
-    <section class="section">
+    <!-- Services -->
+    <section class="section" id="service">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__subtitle">We work with</h3>
@@ -222,6 +223,7 @@
         </div>
     </section>
 
+    <!-- Devices -->
     <section class="section section--devices">
         <div class="container">
             <div class="section__header">
@@ -235,6 +237,7 @@
         </div>
     </section>
 
+    <!-- What we do -->
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -306,6 +309,7 @@
         </div>
     </section>
 
+    <!-- jondoe -->
     <section class="section section--gray">
         <div class="container">
             <div class="jondoe">
@@ -329,7 +333,8 @@
         </div>
     </section>
 
-    <section class="section">
+    <!-- Team -->
+    <section class="section" id="team">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__subtitle">Who we are</h3>
@@ -426,6 +431,7 @@
         </div>
     </section>
 
+    <!-- Sponsors -->
     <section class="section section--gray">
         <div class="container">
             <div class="sponsors">
@@ -451,7 +457,8 @@
         </div>
     </section>
 
-    <section class="section">
+    <!-- Works -->
+    <section class="section" id="work">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__subtitle">What we do</h3>
@@ -552,6 +559,7 @@
         </div>
     </section>
 
+    <!-- jondoe -->
     <section class="section">
         <div class="container">
             <div class="jondoe">
@@ -575,6 +583,7 @@
         </div>
     </section>
 
+    <!-- Clients -->
     <section class="section section--clients">
         <div class="container">
             <div class="section__header">
@@ -636,7 +645,8 @@
         </div>
     </section>
 
-    <section class="section">
+    <!-- Stories -->
+    <section class="section" id="stories">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__subtitle">Our Stories</h3>
@@ -728,6 +738,7 @@
         </div>
     </section>
 
+    <!-- Map -->
     <section class="section section--map">
         <div class="container">
             <div class="map__header">
@@ -740,7 +751,8 @@
         </div>
     </section>
     
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer" id="">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__item footer__item--first">
@@ -836,5 +848,6 @@
         </div>
     </footer>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
 </html>
