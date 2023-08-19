@@ -58,6 +58,8 @@ hr {
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    min-height: 820px;
+    position: relative;
     background: url("../img/images/intro_01.jpg") center no-repeat;
     background-size: cover;
 }
@@ -1138,7 +1140,7 @@ nav {
 
     /* Intro */
     .intro__inner {
-        margin-top: 250px;
+        margin-top: 300px;
         height: 450px;
     }
 
@@ -1148,6 +1150,18 @@ nav {
 
     .intro__subtitle {
         font-size: 42px;
+    }
+
+    .slider {
+        margin-top: 120px;
+    }
+
+    .slider__item__num {
+        font-size: 30px;
+    }
+
+    .slider__item__text {
+        font-size: 20px;
     }
 
     /* Stat */
@@ -1713,22 +1727,30 @@ nav {
     }
 
     .intro__inner {
-        margin-top: 120px;
+        margin-top: 180px;
         height: auto;
     }
 
     .intro__title {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .intro__subtitle {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .btn {
         font-size: 12px;
         padding: 5px 10px;
         margin-top: 0;
+    }
+
+    .slider {
+        margin-top: 50px;
+    }
+
+    .slider__item__num {
+        font-size: 20px;
     }
 
     /* Stat */
