@@ -141,6 +141,8 @@ hr {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+    cursor: pointer;
+    user-select: none;
 }
 
 nav {
@@ -1412,6 +1414,11 @@ nav {
 }
 
 @media (max-width: 770px) {
+    
+    /* Header */
+    .header {
+        padding-bottom: 10px;
+    }
 
     /* Nav */
     nav {
@@ -1421,7 +1428,8 @@ nav {
         left: 0;
         background-color: #e88183;
         width: 100%;
-        /* transition: background .2s linear; */
+        font-size: 20px;
+        padding-bottom: 20px;
     }
 
     nav.active {
@@ -1435,12 +1443,22 @@ nav {
         text-align: center;
     }
 
+    .nav__link__icons {
+
+    }
+
+    .fa-solid{
+        margin-right: 10px;
+    }
+    
     .header__menu {
         display: block;
+        user-select: none;
     }
 
     .header.active {
         background-color: #e88183;
+        user-select: none;
     }
 
     /* Intro */
