@@ -57,7 +57,7 @@ hr {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100vmin;
+    height: 100vh;
     background: url("../img/images/intro_01.jpg") center no-repeat;
     background-size: cover;
 }
@@ -1137,38 +1137,17 @@ nav {
 @media (max-width: 990px) {
 
     /* Intro */
-    .intro {
-        display: flex;
-    }
-    
-    .container--intro {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
     .intro__inner {
-        margin-top: 150px;
+        margin-top: 250px;
+        height: 450px;
     }
 
     .intro__title {
         font-size: 60px;
     }
 
-    .btn {
-        margin: 0;
-    }
-
     .intro__subtitle {
         font-size: 42px;
-    }
-
-    .slider {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 50px;
-        margin: 0;
     }
 
     /* Stat */
@@ -1351,41 +1330,25 @@ nav {
     }
 
     /* Intro */
-    .intro {
-        display: flex;
-    }
-    
-    .container--intro {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
-    .intro__inner {
-        margin-top: 150px;
-    }
-
     .intro__title {
-        font-size: 40px;
-    }
-
-    .btn {
-        margin: 0;
+        font-size: 46px;
     }
 
     .intro__subtitle {
-        font-size: 42px;
+        font-size: 32px;
     }
 
-    .slider {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 50px;
-        margin: 0;
+    /* Slider */
+    .slider__item {
+        text-align: center;
+        padding-top: 10px;
     }
     
-    /* Slider */
+    .slider__item__num {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
     .slider__item__text {
         display: none;
     }
@@ -1741,23 +1704,29 @@ nav {
 @media (max-width: 570px) {
 
     /* Intro */
-    .intro__inner {
-        margin-top: 0;
-        width: 100%;
+    .intro {
+        height: auto;
     }
-    
+
+    .intro__inner {
+        margin-top: 120px;
+        height: auto;
+    }
+
     .intro__title {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .intro__subtitle {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .btn {
-        margin: 0;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-top: 0;
     }
-    
+
     /* Stat */
     .stat_count {
         font-size: 46px;
