@@ -1330,6 +1330,10 @@ nav {
     }
 
     /* Intro */
+    .intro {
+        min-height: 650px;
+    }
+    
     .intro__title {
         font-size: 46px;
     }
@@ -1706,7 +1710,6 @@ nav {
     /* Intro */
     .intro {
         height: auto;
-        min-height: 650px;
     }
 
     .intro__inner {
